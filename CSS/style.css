@@ -16,7 +16,7 @@
   flex-wrap: wrap;
   flex-grow: 1;
   overflow: auto;
-  padding: 20px;
+  padding: 40px 20px;
   justify-content: center;
 }
 
@@ -31,14 +31,31 @@
   aspect-ratio: 16/10;
 }
 
-.debug .top-toolbar {
+/* .debug .top-toolbar {
   border: 1px dashed green;
   height: 70px;
-}
+} */
 
 /* .debug .main-app {
   border: 1px dashed green;
 } */
+
+/* TOP TOOLBAR */
+
+.top-toolbar {
+  display: flex;
+  justify-content: end;
+  color: white;
+}
+
+.top-toolbar .icon {
+  display: inline-block;
+  background-color: #4a4a4a;
+  border-radius: 4px;
+  padding: 2px;
+  text-align: center;
+  font-size: 10px;
+}
 
 /* BOTTOM-TOOLBAR */
 
@@ -49,36 +66,36 @@
   color: white;
 }
 
-.icon {
+.bottom-toolbar .icon {
   display: inline-block;
   padding: 8px 5px;
   text-align: center;
   font-size: 10px;
 }
 
-.icon i {
+.bottom-toolbar .icon i {
   display: block;
   padding: 5px;
   font-size: 20px;
 }
 
-.chevron {
+.bottom-toolbar .chevron {
   display: flex;
   font-size: 7px;
   align-items: center;
   margin-right: 5px;
 }
 
-.box {
+.bottom-toolbar .box {
   display: flex;
   align-content: center;
 }
 
-.icon.green i {
+.bottom-toolbar .icon.green i {
   color: green;
 }
 
-.box:last-child {
+.bottom-toolbar .box:last-child {
   background-color: #4a4a4a;
   color: red;
   font-size: 10px;
