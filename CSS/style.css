@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app-page {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-app {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  overflow: auto;
+  padding: 20px;
+  justify-content: center;
+}
+
+.card {
+  flex-basis: calc(100% / 7);
+  padding: 0 5px;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 16/10;
+}
+
+.debug .top-toolbar,
+.debug .bottom-toolbar {
+  border: 1px dashed green;
+  height: 70px;
+}
+
+/* .debug .main-app {
+  border: 1px dashed green;
+} */
