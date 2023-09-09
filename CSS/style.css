@@ -31,8 +31,7 @@
   aspect-ratio: 16/10;
 }
 
-.debug .top-toolbar,
-.debug .bottom-toolbar {
+.debug .top-toolbar {
   border: 1px dashed green;
   height: 70px;
 }
@@ -40,3 +39,49 @@
 /* .debug .main-app {
   border: 1px dashed green;
 } */
+
+/* BOTTOM-TOOLBAR */
+
+.bottom-toolbar {
+  background-color: #222222;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.icon {
+  display: inline-block;
+  padding: 8px 5px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.icon i {
+  display: block;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.chevron {
+  display: flex;
+  font-size: 7px;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.box {
+  display: flex;
+  align-content: center;
+}
+
+.icon.green i {
+  color: green;
+}
+
+.box:last-child {
+  background-color: #4a4a4a;
+  color: red;
+  font-size: 10px;
+  align-items: center;
+  padding: 10px;
+}
